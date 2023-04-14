@@ -80,36 +80,3 @@ void list_char_null_terminate(list_char *list)
   list->internal_list.count--; 
 }
 
-/*
-int main()
-{
-  list_char myList = (create_list_char(4)); 
-  list_char *list = &myList; 
-
-  char *myString = "hello world!";
-  int i;
-  for (i = 0; i < strlen(myString); i++)
-  {
-    list_char_append(list, myString[i]);
-  }
-  print_list_char(list); 
-
-  list_char_set(list, 0, 'H');
-  print_list_char(list); 
-
-  list_char_insert(list, 5, ',');
-  printf("%s\n", list_char_to_string(list));
-  print_list_char(list);
-
-  list_char_remove(list, 5);
-  printf("%s\n", list_char_to_string(list));
-  list_char_remove(list, 0);
-  printf("%s\n", list_char_to_string(list));
-
-
-
-  
-
-  return 0; 
-}
-*/

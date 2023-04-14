@@ -111,60 +111,6 @@ void free_list(generic_list *list)
    free(list->arr); 
 }
 
-
-/*
-int main()
-{
-   generic_list myList = create_list(sizeof (int), 4); 
-   generic_list *list = &myList; 
-
-   int myNumber = 3; 
-   list_append(list, (char *)&myNumber); 
-
-   int firstNumber[1]; 
-   list_get(list, 0, (char *)firstNumber); 
-   printf("First number in list is %d\n", *firstNumber); 
-   
-   list_append(list, (char *)&myNumber); 
-   list_append(list, (char *)&myNumber); 
-   list_append(list, (char *)&myNumber); 
-   list_append(list, (char *)&myNumber); 
-
-   int newNumber = 5; 
-   list_set(list, 3, (char *)&newNumber); 
-   list_get(list, 3, (char *)firstNumber); 
-   print_list(myList);
-   list_remove(list, 0, (char *)firstNumber); 
-   print_list(myList); 
-   list_remove(list,list->count - 1, (char *)firstNumber);
-   printf("removed %d from list\n", firstNumber[0]); 
-   print_list(myList); 
-
-   printf("list contains number five: %d\n", list_contains(list, (char *)&newNumber));
-
-   list_pop(list, (char *)firstNumber);
-   print_list(myList); 
-   printf("list contains number five: %d\n", list_contains(list, (char *)&newNumber));
-   
-   newNumber = 10; 
-   list_insert(list, 0, (char *)&newNumber); 
-   print_list(myList); 
-
-   newNumber = 999;
-   list_insert(list, list->count, (char *)&newNumber); 
-   print_list(myList); 
-   printf("size of list is %d\n", list->count);
-
-   list_clear(list); 
-   print_list(myList); 
-
-   
-
-   free(myList.arr); 
-   return 0;
-}
-*/
-
 void *resize_array(void *array, int *capacity, size_t elementSize)
 {
    size_t newLength = (*capacity) * elementSize * 2; 
