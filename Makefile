@@ -15,7 +15,7 @@ LIB := lib
 all: $(BIN)/main 
 
 
-$(BIN)/main: $(SOURCE)/main.c $(LIB)/list_char.a $(LIB)/list_int.a $(LIB)/list_string.a
+$(BIN)/main: $(SOURCE)/main.c $(LIB)/list_char.a $(LIB)/list_int.a $(LIB)/list_string.a 
 	$(CC) $(CFLAGS) -I $(INCLUDE) $^ -o $@
 
 $(LIB)/list_string.a: $(BUILD)/list_string.o $(BUILD)/generic_list.o
@@ -39,8 +39,6 @@ $(BUILD)/list_char.o: $(SOURCE)/list_char.c
 
 $(BUILD)/generic_list.o: $(SOURCE)/generic_list.c
 	$(CC) $(CFLAGS) -I $(INCLUDE) -c $< -o $@
-
-
 
 clean:
 	rm -f $(BUILD)/* $(BIN)/* $(LIB)/*

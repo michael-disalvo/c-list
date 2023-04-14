@@ -1,3 +1,6 @@
+#ifndef LIST_INT_H
+#define LIST_INT_H
+
 #include "generic_list.h"
 
 
@@ -19,3 +22,5 @@ int list_int_pop(list_int *list);
 void list_int_clear(list_int *list); 
 int list_int_contains(list_int *list, int number); 
 void print_list_int(list_int *list);
+
+#endif

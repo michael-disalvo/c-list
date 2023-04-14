@@ -1,3 +1,6 @@
+#ifndef GENERIC_LIST_H
+#define GENERIC_LIST_H
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -23,3 +26,5 @@ void list_pop(generic_list *list, char *object);
 void list_clear(generic_list *list); 
 int list_contains(generic_list *list, char *object); 
 void free_list(generic_list *list);
+
+#endif 

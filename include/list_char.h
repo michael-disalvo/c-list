@@ -1,3 +1,6 @@
+#ifndef LIST_CHAR_H
+#define LIST_CHAR_H
+
 #include "generic_list.h"
 
 
@@ -18,3 +21,5 @@ void list_char_clear(list_char *list);
 int list_char_contains(list_char *list, char character); 
 void print_list_char(list_char *list); 
 char *list_char_to_string(list_char *list);
+
+#endif
