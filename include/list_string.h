@@ -1,3 +1,6 @@
+#ifndef LIST_STRING_H
+#define LIST_STRING_H
+
 #include "list_char.h"
 
 
@@ -17,3 +20,5 @@ list_char *list_string_pop(list_string *list);
 void list_string_clear(list_string *list);
 int list_string_contains(list_string *list, list_char *string);
 void print_list_string(list_string *list); 
+
+#endif

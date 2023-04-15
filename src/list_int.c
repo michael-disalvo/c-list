@@ -66,39 +66,3 @@ void print_list_int(list_int *list)
 }
 
 
-int main()
-{
-  list_int myList = create_list_int(3); 
-  list_int *list = &myList; 
-
-  list_int_append(list, 1); 
-  list_int_append(list, 2); 
-  list_int_append(list, 3); 
-  list_int_append(list, 4);
-  list_int_append(list, 5);
-  list_int_append(list, 6);
-  list_int_append(list, 7);
-  list_int_insert(list, 4, 0);
-
-  print_list_int(list);
-  list_int_set(list, 1, 1000); 
-  print_list_int(list); 
-  list_int_set(list, 0, -999); 
-  print_list_int(list); 
-  list_int_insert(list, 1, 42);
-  print_list_int(list);
-
-  list_int_remove(list, 3); 
-  print_list_int(list);
-
-  int num = list_int_pop(list); 
-  printf("%d was popped off of list\n", num);
-  print_list_int(list);
-
-  list_int_clear(list);
-  print_list_int(list);
-
-  free(list->internal_list.arr);
-
-  return 0; 
-}
