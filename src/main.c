@@ -34,6 +34,8 @@ int main()
 
   printf("myCharList contains j? %d\n", list_char_contains(&myCharList, 'j'));
   printf("myCharList contains x? %d\n", list_char_contains(&myCharList, 'x'));
+  printf("myIntList contains -1? %d\n", list_int_contains(&myIntList, -1));
+  printf("myIntList contains 94? %d\n", list_int_contains(&myIntList, 94));
 
 
   free(myIntList.internal_list.arr);
