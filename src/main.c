@@ -32,11 +32,14 @@ int main()
   }
   print_list_string(&myStringList);
 
+  printf("myCharList contains j? %d\n", list_char_contains(&myCharList, 'j'));
+  printf("myCharList contains x? %d\n", list_char_contains(&myCharList, 'x'));
+
 
   free(myIntList.internal_list.arr);
   free(myCharList.internal_list.arr);
+  free(myStringList.internal_list.arr);
 
-  
 
 
 

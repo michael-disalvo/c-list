@@ -80,3 +80,7 @@ void list_char_null_terminate(list_char *list)
   list->internal_list.count--; 
 }
 
+int list_char_contains(list_char *list, char character)
+{
+  return list_contains((generic_list *)list, (char *) &character);
+}
