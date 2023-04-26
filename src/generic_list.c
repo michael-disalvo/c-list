@@ -35,6 +35,15 @@ void list_append(generic_list *list, char *object)
    list->count++; 
 }
 
+void list_append_many(generic_list *list, char *objects, int numObjects)
+{
+   int pos; 
+   for (pos = 0; pos < numObjects*list->elementSize; pos += list->elementSize)
+   {
+      list_append(list, (objects + pos)); 
+   }
+}
+
 void list_insert(generic_list *list, int index, char *object)
 {
    if (index == list->count)

@@ -13,6 +13,7 @@ list_char create_list_char(int initialCapacity);
 char list_char_get(list_char *list, int index); 
 int list_char_count(list_char *list); 
 void list_char_append(list_char *list, char character); 
+void list_char_append_many(list_char *list, char *characters, int numCharacters);
 void list_char_set(list_char *list, int index, char character); 
 void list_char_insert(list_char *list, int index, char character); 
 char list_char_remove(list_char *list, int index); 

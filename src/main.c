@@ -13,13 +13,10 @@ int main()
   list_string myStringList = create_list_string(10);
 
   char *string = "This is just a basic string";
-  int i;
-  for (i = 0; i < strlen(string); i++)
-  {
-    list_char_append(&myCharList, string[i]);
-  }
+  list_char_append_many(&myCharList, string, strlen(string)); 
   print_list_char(&myCharList);
 
+  int i;
   for (i = 0; i < 100; i++)
   {
     list_int_append(&myIntList, i);
