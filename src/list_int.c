@@ -47,6 +47,10 @@ void list_int_clear(list_int *list)
 {
   list_clear((generic_list *)list); 
 }
+int list_int_contains(list_int *list, int number)
+{
+  return list_contains((generic_list *)list, (char *)&number);
+}
 
 void print_list_int(list_int *list)
 {
