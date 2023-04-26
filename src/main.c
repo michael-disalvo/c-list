@@ -37,6 +37,8 @@ int main()
   printf("myIntList contains -1? %d\n", list_int_contains(&myIntList, -1));
   printf("myIntList contains 94? %d\n", list_int_contains(&myIntList, 94));
 
+  printf("myStringList contains string %d\n", list_string_contains(&myStringList, &myCharList));
+
 
   free(myIntList.internal_list.arr);
   free(myCharList.internal_list.arr);

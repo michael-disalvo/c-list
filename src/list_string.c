@@ -49,6 +49,10 @@ void list_string_clear(list_string *list)
 {
   list_clear((generic_list *)list);
 }
+int list_string_contains(list_string *list, list_char *string)
+{
+  return list_contains((generic_list *)list, (char *) &string);
+}
 void print_list_string(list_string *list)
 {
   if (list_string_count(list) == 0)
