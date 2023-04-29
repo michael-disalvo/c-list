@@ -25,6 +25,10 @@ void list_int_append(list_int *list, int number)
 {
   list_append( (generic_list *)list, (char *)&number);
 }
+void list_int_append_many(list_int *list, int *numbers, int numNumbers)
+{
+  list_append_many( (generic_list *)list, (char *)numbers, numNumbers);
+}
 void list_int_set(list_int *list, int index, int number)
 {
   list_set( (generic_list *)list, index, (char *)&number);
