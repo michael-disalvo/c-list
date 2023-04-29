@@ -27,6 +27,10 @@ void list_char_append(list_char *list, char character)
  list_append((generic_list *)list, (char *)&character);  
  list_char_null_terminate(list);
 }
+void list_char_append_many(list_char *list, char *characters, int numCharacters)
+{
+  list_append_many((generic_list *)list, (char *)characters, numCharacters);
+}
 void list_char_set(list_char *list, int index, char character)
 {
   list_set((generic_list *)list, index, (char *)(&character));

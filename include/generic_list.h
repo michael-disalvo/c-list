@@ -19,6 +19,7 @@ typedef struct generic_list
 generic_list create_list(size_t elementSize, int initialCapacity); 
 void list_get(generic_list *list, int index, char *outputObject); 
 void list_append(generic_list *list, char *object); 
+void list_append_many(generic_list *list, char *objects, int numObjects);
 void list_set(generic_list *list, int index, char *object); 
 void list_insert(generic_list *list, int index, char *object); 
 void list_remove(generic_list *list, int index, char *object); 

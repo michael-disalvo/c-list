@@ -13,6 +13,7 @@ list_string create_list_string(int initialCapacity);
 list_char *list_string_get(list_string *list, int index);
 int list_string_count(list_string *list);
 void list_string_append(list_string *list, list_char *string);
+void list_string_append_many(list_string *list, list_char **strings, int numStrings); 
 void list_string_set(list_string *list, int index, list_char *string);
 void list_string_insert(list_string *list, int index, list_char *string);
 list_char *list_string_remove(list_string *list, int index);
